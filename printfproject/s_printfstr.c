@@ -8,18 +8,20 @@ int s_printfstr(va_list args)
 {
 	int x;
 	char *str;
-	char null[] = "(null)";
+	char nill[] = "(nill)";
 
 	str = va_arg(args, char *);
 	if (str == NULL)
 	{
-		for (r = 0, null[x] != '\0'; x++)
-			-putchar(null[r]);
+		for (x = 0, nill[x] != '\0'; x++)
+		{
+			_putchar(nill[x]);
+		}
 		return (6)
 	}
-	for (r = 0; str[r] != '\0'; x++)
+	for (x = 0; str[x] != '\0'; x++)
 	{
-		_putchar(str[r]);
+		_putchar(str[x]);
 	}
 	return (x);
 }

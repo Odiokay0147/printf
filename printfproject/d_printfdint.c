@@ -1,11 +1,11 @@
-#include "main.h"
+nclude "main.h"
 /**
- * print_number - function that prints an integer number
+ * print_number - function that prints a decimal integer number
  * @args: arguments
  *
  * Return: number of character
  */
-int i_printfint(va_list args)
+int d_printfdint(va_list args)
 {
 	int x;
 	unsigned int numb, rm, i, dvd = 1, y = 0;
@@ -21,15 +21,15 @@ int i_printfint(va_list args)
 	{
 		numb = x;
 	}
-
+	
 	rm = numb;
-
+	
 	while (rm > 9)
 	{
 		dvd *= 10;
 		rm /= 10;
 	}
-
+	
 	for (i = 0; div > 0; dvd /= 10, i++, y++)
 	{
 		_putchar(((numb / dvd) % 10) + '0');
