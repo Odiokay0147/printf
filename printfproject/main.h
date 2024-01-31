@@ -4,6 +4,7 @@
 #include <stdarg.h>
 #include <stdlib.h>
 
+int _printf(const char *format, ...);
 int c_printfchar(va_list args);
 int s_printfstr(va_list args);
 int %_printfper(va_list_attribute_((unused)) args);
